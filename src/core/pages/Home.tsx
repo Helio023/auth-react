@@ -31,6 +31,10 @@ const Button = styled.button<ButtonProps>`
   border: ${(props) =>
     props.bg === 'transparent' ? '2px solid black' : 'none'};
   cursor: pointer;
+
+  @media only screen and (max-width: 335px) {
+    margin-top: 25px;
+  }
 `;
 
 const Home = () => {
